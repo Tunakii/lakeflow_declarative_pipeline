@@ -15,7 +15,7 @@ SELECT
   s.capital,
   s.currency_code,
   c.language_count
-FROM silver_cleaned_countries s
+FROM silver_cleaned_countries_history s
 JOIN country_language_counts c
   ON s.language_code = c.language_code
 AND s.population IS NOT NULL;

@@ -1,10 +1,10 @@
+%yaml
 # The main pipeline for lakeflow_declarative_pipeline
 
 resources:
   pipelines:
     declarative_pipeline_etl:
       name: declarative_pipeline_etl
-      ## Catalog is required for serverless compute
       catalog: ${var.catalog}
       schema: ${var.schema}
       serverless: true
@@ -13,3 +13,7 @@ resources:
       libraries:
         - glob:
             include: transformations/**
+
+      tables:
+        - name: silver_cleaned_countries_history
+          type: streaming_table

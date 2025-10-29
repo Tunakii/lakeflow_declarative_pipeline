@@ -8,7 +8,7 @@ To deploy and manage this asset bundle, follow these steps:
 
 ### 1. Deployment
 
-- Click the **deployment rocket** 🚀 in the left sidebar to open the **Deployments** panel, then click **Deploy**.
+- Click the **deployment rocket** in the left sidebar to open the **Deployments** panel, then click **Deploy**.
 
 ### 2. Running Jobs & Pipelines
 
